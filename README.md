@@ -88,8 +88,8 @@ There are different methods to make a decision for the given claims.
  - Finally, we make a decision by comparing the sample mean (x̄) with the calculated critical values.
 
 <p align="center">
-<img src="images/critical_value_method.png" alt="Critical Values" height = "400" width="45%"/>
-<img src="images/z-table.png" alt="Standard Deviation Values" height="400" width="45%"/>
+<img src="images/critical_value_method.png" alt="Critical Values" height = "350" width="45%"/>
+<img src="images/z-table.png" alt="Standard Deviation Values" height="350" width="45%"/>
 </p>
 
 Example : 
@@ -139,8 +139,8 @@ Steps
 - Decision rule: If  p≤α, reject H<sub>0</sub>; otherwise, fail to reject H<sub>0</sub>.
   
 <p align="center">
-<img src="images/p_value_method.png" alt="P-Value Method" height="400" width="45%"/>
- <img src="images/z-table.png" alt="Standard Deviation Values" height="400" width="45%"/>
+<img src="images/p_value_method.png" alt="P-Value Method" height="350" width="45%"/>
+ <img src="images/z-table.png" alt="Standard Deviation Values" height="350" width="45%"/>
 </p>
 
 
@@ -189,8 +189,8 @@ Steps:
  - Otherwise, fail to reject H <sub>0</sub>.
 
 <p align="center">
-  <img src="images/t-distribution.png" alt="T - Distribution" height="400" width="45%"/>
-  <img src="images/T-table.png" alt="T - Table" height="400" width="45%"/>
+  <img src="images/t-distribution.png" alt="T - Distribution" height="350" width="45%"/>
+  <img src="images/T-table.png" alt="T - Table" height="350" width="45%"/>
  
 </p>
 
@@ -227,8 +227,8 @@ Formula
 - O → Observed
 
 <p align="center">
-<img src="images/Chi-square.webp" alt="Chi Square Distribution" height="400" width="45%"/>
- <img src="images/Chi-square_distribution_table.webp" alt="Chi Squared Values" height="400" width="45%"/>
+<img src="images/Chi-square.webp" alt="Chi Square Distribution" height="350" width="45%"/>
+ <img src="images/Chi-square_distribution_table.webp" alt="Chi Squared Values" height="350" width="45%"/>
 </p>
 
 
