@@ -187,8 +187,11 @@ Steps:
  - Otherwise, fail to reject H <sub>0</sub>.
 
 <p align="center">
-  <img src="images/t-distribution.png" alt="T - Distribution" width="45%"/>
-  <img src="images/T-table.png" alt="T - Table" width="45%"/>
+  <img src="images/t-distribution.png" alt="T - Distribution" width="50%"/>
+  
+</p>
+<p align="center">
+<img src="images/T-table.png" alt="T - Table" width="50%"/>
 </p>
 
 Example:
