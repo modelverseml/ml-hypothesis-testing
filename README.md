@@ -259,7 +259,78 @@ Steps :
 - For α = 0.05 and df = 1:
    - Critical value (χ<sup>2</sup><sub>0.05</sub>,1) ≈ 3.841
 
-- Since χ² (4) > 3.841 → reject H₀.
+- Since χ² (4) > 3.841 → reject H<sub>0</sub> .
 
+---
+f) ANOVA (Analysis of Variance) / F- Statistics :
 
+→ If we only had 2 groups, we’d just use a t-test. But for 3 or more, doing multiple t-tests increases the chance of error.
 
+ANOVA solves this by comparing:
+
+- Variation between groups (how far group means are from the overall mean).
+
+- Variation within groups (how spread out the data is inside each group).
+
+Formula:
+
+ F = Variance between Groups / Variance within Group 
+   = Mean squared between groups / Mean squared within groups 
+   = ​MS<sub>between</sub> / MS<sub>within</sub>
+   
+ - MS<sub>between</sub> =  SS<sub>between</sub> / df<sub>between</sub>
+   - SS<sub>between</sub> : Sum of squares between groups (differences of group means from overall mean)
+      - SSB= Σ<sub>g=1</sub><sup>k</sup> n<sub>g</sub> (x̄<sub>g</sub> − x̄<sub>..</sub>)²
+   - df<sub>between</sub> : k−1 (k = number of groups)
+ - MS<sub>within</sub>=  SS<sub>within</sub> / df<sub>within</sub>
+   - SS<sub>within</sub> : Sum of squares within groups (variation inside each group).
+      - SSW = Σ<sub>g=1</sub><sup>k</sup> Σ<sub>i=1</sub><sup>n<sub>g</sub></sup> (x<sub>ig</sub> − x̄<sub>g</sub>)²
+   - df<sub>within</sub> : N−k (N = total sample size)
+	
+	​​
+<p align="center">
+<img src="images/F-distribution.png" alt="F Distribution" height="350" width="45%"/>
+ <img src="images/F-table.png" alt="F - Statistics Values" height="350" width="45%"/>
+</p>
+
+Example : 
+Data (scores by teaching method)
+- Group A: 85, 90, 88
+- Group B: 90, 78, 74
+- Group C: 92, 94, 96
+
+Steps :
+
+- Hypothesis :
+  - H <sub>0</sub> : μ<sub>A</sub> ​= μ<sub>B</sub> ​= μ<sub>C</sub>
+  - H <sub>1</sub> : At least one group mean is different
+- Parameters
+  - n<sub>A</sub> = 3 , n<sub>B</sub> = 3, n<sub>C</sub> = 3
+  - Number of groups k=3.
+  - Grouped means
+    - x̄<sub>A</sub> = (85+90+88)/3 = 87.67
+    - x̄<sub>B</sub> = 75.67
+    - x̄<sub>C</sub> = 94
+  - x̄ = 85.78 (overall mean)
+
+ - SSB = n<sub>A</sub> × ((x̄<sub>A</sub> - x̄ )<sup>2</sup>) + n<sub>B</sub> × ((x̄<sub>B</sub> - x̄ )<sup>2</sup>) + n<sub>C</sub> × ((x̄<sub>C</sub> - x̄ )<sup>2</sup>) = 521.37
+ - SSW
+   - Group A = Σ<sub>i=1</sub><sup>n<sub>A</sub></sup> (x<sub>iA</sub> − x̄<sub>A</sub>)² = (85 - 87.6)<sup>2</sup> + (90 - 87.6)<sup>2</sup> + (88 - 87.6)<sup>2</sup> = 7.11
+   - Group B = Σ<sub>i=1</sub><sup>n<sub>B</sub></sup> (x<sub>iB</sub> − x̄<sub>B</sub>)² = 10.66
+   - Group C = Σ<sub>i=1</sub><sup>n<sub>C</sub></sup> (x<sub>iC</sub> − x̄<sub>C</sub>)² = 8
+   - SSW = Σ Groups = 7.11 + 10.66 + 8 = 25.77
+ - df<sub>between</sub> =  k−1 (k = number of groups) = 3 - 1 = 2 (df<sub>1</sub>)
+ - df<sub>within</sub> : N−k (N = total sample size) = 9 - 3 = 6 (df<sub>2</sub>)
+- MS<sub>between</sub> =  SS<sub>between</sub> / df<sub>between</sub> = 521.37 / 2 = 260.68
+- MS<sub>within</sub>=  SS<sub>within</sub> / df<sub>within</sub> = 25.77 / 6 = 4.3
+- F = ​MS<sub>between</sub> / MS<sub>within</sub> = 260.68 / 4.3 = 60.62
+- From f-table df<sub>1</sub> = 2,df<sub>2</sub> = 2, α=0.05
+  -  F - critical = 5.14
+ 
+- F - stastic (60.62) > F - critical (5.14)  → reject H<sub>0</sub> 
+  
+ 
+      
+	​
+
+ ​​
