@@ -297,7 +297,7 @@ Example :
 Data (scores by teaching method)
 - Group A: 85, 90, 88
 - Group B: 75, 78, 94
-- Group C: 88, 74, 96
+- Group C: 92, 94, 96
 
 Steps :
 
