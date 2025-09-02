@@ -327,7 +327,7 @@ Steps :
 - From f-table df<sub>1</sub> = 2,df<sub>2</sub> = 2, α=0.05
   -  F - critical = 5.14
  
-- F - stastic (60.62) > F - critical (5.14)  → reject H<sub>0</sub> 
+- F - statistic (60.62) > F - critical (5.14)  → reject H<sub>0</sub> 
   
  
       
