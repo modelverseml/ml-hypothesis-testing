@@ -164,7 +164,7 @@ Formula
    - Decision: Reject H<sub>0</sub>
    ​
 ---
- #### b) T - Distribution:
+ #### c) T - Distribution:
  
 It is also referred to as the Student’s t-distribution.
 
@@ -214,3 +214,46 @@ H<sub>1</sub>​:μ=30
   - At α=0.05 (two-tailed) and df=24:
      - t<sub>0.025,24</sub>​≈2.064
 - Decision : Since t=2.5>2.064, we reject H<sub>0</sub>
+
+---
+d) Chi-Square Test (Goodness-of-Fit / Categorical counts) :
+
+compare observed counts in categories to expected counts , if observed counts are much different from expected, reject the assumed distribution.
+
+Formula
+
+χ<sup>2</sup> = ∑( (O−E)<sup>2</sup>/E​ )
+- E → Expected
+- O → Observed
+
+Example : 
+claim : We want to test if a coin is fair (i.e., probability of heads = 0.5)
+
+Number of times coin flipped = 100
+
+Steps : 
+
+H<sub>0</sub> : p = 0.5
+H<sub>1</sub> : p ≠ 0.5
+
+Let say after fliping 100 times observed is 60 heads , 40 tails
+
+ - Observed Heads (O<sub>1</sub>) = 60
+
+ - Observed Tails (O<sub>2</sub>) = 40
+
+Expected :
+ - Expected Heads (E<sub>1</sub>) = 50
+ - Expected Heads (E<sub>2</sub>) = 50
+
+
+Steps : 
+- χ<sup>2</sup> = ∑( (O−E)<sup>2</sup>/E​ ) = (60 - 50)<sup>2</sup> / 50 + (40 - 50)<sup>2</sup> / 50 = 4
+- Degrees of Freedom : k(Number of categories)−1=2−1=1
+- For α = 0.05 and df = 1:
+   - Critical value (χ<sup>2</sup><sub>0.05</sub>,1) ≈ 3.841
+
+- Since χ² (4) > 3.841 → reject H₀.
+
+
+
