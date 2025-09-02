@@ -133,7 +133,7 @@ Steps
 - For a two-tailed test, multiply the p-value by 2.
 - Decision rule: If  p≤α, reject H<sub>0</sub>; otherwise, fail to reject H<sub>0</sub>.
 
-<img src="images/p_value_method.webp" alt="P-Value Method" width="50%"/>
+<img src="images/p_value_method.png" alt="P-Value Method" width="50%"/>
 
 
 Example : 
