@@ -69,8 +69,92 @@ we are interested in **both directions** (greater or smaller than the claim).
 If our claim is **one-sided**, then we only care about **one direction**.  
 
 - **Left-tailed test (≤)** → Reject H<sub>0</sub> if observed value < LCV.  
-- **Right-tailed test (≥)** → Reject H<sub>0</sub> if observed value > UCV.  
+- **Right-tailed test (≥)** → Reject H<sub>0</sub> if observed value > UCV.
 
-![Critical Values](images/critical_values.webp)
+<img src="images/critical_values.webp" alt="Critical Value" width="50%"/>
+
 ---
 
+### Making Decisions:
+
+There are different methods to make a decision for the given claims.
+
+#### a) Critical Value Method:
+
+ - First, we need to assume an error margin, which we call the significance level (α).
+ - Let’s take α = 5%. Based on this α and the type of test, we calculate the Lower Critical Value (LCV) and Upper Critical Value (UCV).
+ - Finally, we make a decision by comparing the sample mean (x̄) with the calculated critical values.
+
+<img src="images/critical_value_method.png" alt="Critical Values" width="50%"/>
+
+Example : 
+- **H<sub>0</sub> :** Total sales = $10 billion
+- **H<sub>1</sub> :** Total sales ≠ $10 billion
+- α=0.05 , x̄ = 9, σ=2, n=40
+
+Formula
+
+  LCV = μ<sub>0</sub>​ − z<sub>α/2</sub>​⋅(σ / √n)
+
+  ​UCV = μ<sub>0</sub>​ + z<sub>α/2</sub>​⋅(σ / √n)
+
+  We need the z-score that cuts off the upper 2.5% of the distribution.
+
+  - The cumulative probability at that point is 1 − 0.025 = 0.975
+
+  - Looking up in the z-table: 𝑧 = 1.96
+
+    Steps
+     - Standard Error (SE) = (σ / √n) = 2 /√40 ≈0.316
+     - Critical values
+       - Margin of error = z<sub>α/2</sub>​⋅(σ / √n) = 1.96 × 0.316 ≈ 0.619
+       - 𝐿𝐶𝑉 = 10 − 0.619 = 9.381
+       - UCV=10+0.619=10.619
+
+So, the acceptance region is: [9.381, 10.619]
+
+   - Compare sample mean
+     - Since  9<9.381, it falls outside the acceptance region.
+     - Decision: Reject H<sub>0</sub>
+  
+
+---
+ #### b) P-Value Method:
+
+The p-value is the probability of obtaining a test statistic at least as extreme as the one observed, assuming the null hypothesis is true.
+
+- A high p-value indicates strong evidence to fail to reject H<sub>0</sub>.
+
+- A low p-value (less than the chosen significance level α) provides evidence to reject H<sub>0</sub>.
+
+Steps
+- Calculate the Z-score for the sample mean.
+- Find the p-value from the cumulative probability of the given Z-score using the Z-table.
+- For a two-tailed test, multiply the p-value by 2.
+- Decision rule: If  p≤α, reject H<sub>0</sub>; otherwise, fail to reject H<sub>0</sub>.
+
+<img src="images/p_value_method.webp" alt="P-Value Method" width="50%"/>
+
+
+Example : 
+- **H<sub>0</sub> :** Total sales ≤ $10 billion
+- **H<sub>1</sub> :** Total sales > $10 billion
+- α=0.05 , x̄ = 9, σ=2, n=40
+
+Formula
+
+  Z-Score  = (x̄ -  μ<sub>0</sub>​) × (σ / √n)
+  
+  Steps
+  
+   - Standard Error (SE) = (σ / √n) = 2 /√40 ≈0.316
+   - Z -Score : (9 - 10) / (0.316) ≈−3.16
+   - Find cumulative probability (From the Z-table):
+     - P(Z<−3.16)≈0.0008
+   - Since it’s a two-tailed test:
+     - p-value=2×0.0008=0.0016
+   - Compare with α
+     - p=0.0016<0.05
+   - Decision: Reject H<sub>0</sub>​
+
+  
